@@ -19,8 +19,11 @@
     "README.md"
   ],
   "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
     "build": "echo \"Build not yet configured\"",
-    "test": "echo \"Tests not yet configured\"",
     "lint": "echo \"Biome not yet configured\"",
     "format": "echo \"Biome not yet configured\""
   },
@@ -58,5 +61,10 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.0.15",
+    "@vitest/ui": "^4.0.15",
+    "vitest": "^4.0.15"
   }
 }
