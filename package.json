@@ -1,31 +1,62 @@
 {
-  "name": "bazi-converter",
-  "version": "1.0.20",
-  "description": "Used to convert English date into bazi",
-  "main": "BaziConverter.js",
+  "name": "@gander-tools/bazi-converter",
+  "version": "0.0.0",
+  "description": "Convert Gregorian dates to Chinese Bazi (Four Pillars of Destiny) with modern TypeScript support",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "data",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-docs": "jsdoc2md -f BaziConverter.js > docs.md"
+    "build": "echo \"Build not yet configured\"",
+    "test": "echo \"Tests not yet configured\"",
+    "lint": "echo \"Biome not yet configured\"",
+    "format": "echo \"Biome not yet configured\""
   },
   "keywords": [
-    "Bazi",
-    "TianGan",
-    "Dizhi",
-    "Taoism",
-    "Taoist"
+    "bazi",
+    "八字",
+    "four-pillars",
+    "chinese-astrology",
+    "tianGan",
+    "dizhi",
+    "heavenly-stems",
+    "earthly-branches",
+    "taoism",
+    "taoist",
+    "fortune-telling",
+    "typescript"
   ],
-  "files": [
-    "data",
-    "functions"
-  ],
-  "author": "tinytinydev",
-  "license": "MIT",
-  "type": "module",
-  "dependencies": {
-    "bazi-converter": "^1.0.8",
-    "fs": "^0.0.1-security"
+  "author": {
+    "name": "Adam Gąsowski (gander)",
+    "url": "https://github.com/gander"
   },
-  "devDependencies": {
-    "jsdoc-to-markdown": "^8.0.0"
+  "contributors": [
+    {
+      "name": "Eugene Choy (tinytinydev)",
+      "url": "https://github.com/tinytinydev"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gander-tools/bazi-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gander-tools/bazi-converter/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
